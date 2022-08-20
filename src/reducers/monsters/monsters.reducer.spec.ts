@@ -5,7 +5,9 @@ import monstersData from '../../../data/monsters.json';
 describe('Monsters Reducer', () => {
   it('should return the initial state', () => {
     expect(monstersReducer(undefined, { type: undefined })).toEqual({
+      battleResult: null,
       monsters: [],
+      selectedComputerMonster: null,
       selectedMonster: null,
     });
   });
